@@ -1,0 +1,3 @@
+# Algorithms
+
+- [Sort Functions](./Sort)
