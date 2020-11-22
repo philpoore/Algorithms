@@ -1,9 +1,10 @@
+SORT_FUNCTIONS=Selection Insertion Merge MergeInPlace
 all:
-	$(MAKE) -C Selection
-	$(MAKE) -C Insertion
-	$(MAKE) -C Merge
+	for sort in $(SORT_FUNCTIONS) ; do \
+		$(MAKE) -C $$sort ; \
+	done
 
 clean:
-	$(MAKE) -C Selection clean
-	$(MAKE) -C Insertion clean
-	$(MAKE) -C Merge clean
+	@for sort in $(SORT_FUNCTIONS) ; do \
+		$(MAKE) -C $$sort clean ; \
+	done
