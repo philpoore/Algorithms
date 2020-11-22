@@ -1,4 +1,9 @@
-SORT_FUNCTIONS=Selection Insertion Merge MergeInPlace
+SORT_FUNCTIONS=\
+	Selection \
+	Insertion \
+	Merge \
+	MergeInPlace \
+	QuickSort
 all:
 	for sort in $(SORT_FUNCTIONS) ; do \
 		$(MAKE) -C $$sort ; \
